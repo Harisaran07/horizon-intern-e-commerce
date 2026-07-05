@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Shopverse Store — Discover premium electronics, clothing, accessories and more. Shop the latest products with free shipping on orders over $100.">
+  <title>Shopverse Store — Premium Online Shopping</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div id="navbar"></div>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <!-- Animated Products Background -->
+    <div class="hero-animated-bg">
+      <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500&q=80" alt="bg1" class="floating-img img-1">
+      <img src="https://images.unsplash.com/photo-1524592094714-0f0654e20314?w=500&q=80" alt="bg2" class="floating-img img-2">
+      <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?w=500&q=80" alt="bg3" class="floating-img img-3">
+      <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?w=500&q=80" alt="bg4" class="floating-img img-4">
+      <img src="https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?w=500&q=80" alt="bg5" class="floating-img img-5">
+      <img src="https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=500&q=80" alt="bg6" class="floating-img img-6">
+    </div>
+
+    <div class="hero-content">
+      <h1>Discover Premium Products</h1>
+      <p>Curated collection of electronics, fashion, and lifestyle products. Handpicked for quality, designed for you.</p>
+      <div class="hero-actions">
+        <a href="#products" class="btn btn-primary btn-lg">Shop Now</a>
+        <a href="#products" class="btn btn-secondary btn-lg">Explore Collection</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section id="products" class="page-wrapper" style="padding-top: var(--space-2xl);">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h1>Our Products</h1>
+        <p>Browse our curated selection of premium products</p>
+      </div>
+
+      <!-- Filter Bar -->
+      <div class="filter-bar fade-in">
+        <button class="filter-chip active" data-category="All" onclick="setCategory('All')">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--text-primary);"><rect width="7" height="7" x="3" y="3" rx="1"/><rect width="7" height="7" x="14" y="3" rx="1"/><rect width="7" height="7" x="14" y="14" rx="1"/><rect width="7" height="7" x="3" y="14" rx="1"/></svg>
+          All
+        </button>
+        <button class="filter-chip" data-category="Electronics" onclick="setCategory('Electronics')">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--accent-purple);"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"/></svg>
+          Electronics
+        </button>
+        <button class="filter-chip" data-category="Clothing" onclick="setCategory('Clothing')">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--accent-pink);"><path d="M20.38 3.46 16 2a4 4 0 0 1-8 0L3.62 3.46a2 2 0 0 0-1.34 2.23l.58 3.47a1 1 0 0 0 .99.84H6v10c0 1.1.9 2 2 2h8a2 2 0 0 0 2-2V10h2.15a1 1 0 0 0 .99-.84l.58-3.47a2 2 0 0 0-1.34-2.23z"/></svg>
+          Clothing
+        </button>
+        <button class="filter-chip" data-category="Accessories" onclick="setCategory('Accessories')">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--accent-cyan);"><circle cx="12" cy="12" r="6"/><polyline points="12 10 12 12 13 13"/><path d="m16.13 7.66-.81-4.05a2 2 0 0 0-2-1.61h-2.68a2 2 0 0 0-2 1.61l-.78 4.05"/><path d="m7.88 16.36.8 4a2 2 0 0 0 2 1.61h2.72a2 2 0 0 0 2-1.61l.81-4"/></svg>
+          Accessories
+        </button>
+        <button class="filter-chip" data-category="Home & Living" onclick="setCategory('Home & Living')">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--accent-amber);"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          Home & Living
+        </button>
+        
+        <div class="search-wrapper">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <path d="m21 21-4.3-4.3"></path>
+          </svg>
+          <input type="text" class="search-input" id="searchInput" placeholder="Search products..." oninput="handleSearch(event)">
+        </div>
+      </div>
+
+      <!-- Product Grid -->
+      <div class="product-grid" id="productGrid">
+        <!-- Populated by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Scripts -->
+  <script src="js/api.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/products.js"></script>
+  <script src="js/app.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      loadProducts();
+
+      // Check for category from URL params
+      const params = new URLSearchParams(window.location.search);
+      const cat = params.get('category');
+      if (cat) {
+        setCategory(cat);
+      }
+    });
+  </script>
+</body>
+</html>
